@@ -30,7 +30,7 @@ body {
 }
 a { color: var(--blue); text-decoration-thickness: 1px; text-underline-offset: 3px; }
 a:hover { color: var(--orange); }
-img { max-width: 100%; display: block; }
+img { max-width: 100%; height: auto; display: block; }
 
 /* Munich-72 colour bar */
 .stripe { display: flex; gap: 8px; }
@@ -71,7 +71,7 @@ img { max-width: 100%; display: block; }
 .hero h1 { font-size: clamp(38px, 6vw, 64px); line-height: 1.04; letter-spacing: -0.02em; margin: 18px 0 16px; font-weight: 850; }
 .hero h1 em { font-style: normal; color: var(--orange); }
 .hero .lead { font-size: 20px; color: var(--ink-2); max-width: 34ch; margin: 0 0 26px; }
-.hero-shot img { width: min(330px, 100%); margin: 0 auto; filter: drop-shadow(0 22px 40px rgba(30, 40, 58, 0.22)); }
+.hero-shot img { width: min(330px, 100%); height: auto; aspect-ratio: 1320 / 2868; border-radius: 26px; margin: 0 auto; filter: drop-shadow(0 22px 40px rgba(30, 40, 58, 0.22)); }
 
 .cta { display: flex; gap: 14px; align-items: center; flex-wrap: wrap; }
 .button {
@@ -101,7 +101,7 @@ h2 { font-size: clamp(28px, 4vw, 40px); line-height: 1.12; letter-spacing: -0.01
 .tag.ochre { color: var(--ochre); background: rgba(143, 99, 13, 0.12); }
 
 .shots { display: flex; gap: 18px; overflow-x: auto; padding: 6px 2px 18px; scroll-snap-type: x mandatory; }
-.shots img { width: 240px; flex: 0 0 auto; border-radius: 18px; scroll-snap-align: start; box-shadow: 0 10px 26px rgba(30, 40, 58, 0.14); }
+.shots img { width: 240px; height: auto; aspect-ratio: 1320 / 2868; flex: 0 0 auto; border-radius: 18px; scroll-snap-align: start; box-shadow: 0 10px 26px rgba(30, 40, 58, 0.14); }
 
 .fair { background: var(--ink); color: #fff; border-radius: 28px; padding: 40px; }
 .fair h2 { color: #fff; }

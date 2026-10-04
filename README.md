@@ -10,7 +10,7 @@ Static site, no build step, no JavaScript, no cookies. Style follows the game's 
 | Terms of Use | `terms.html` | — (licence = Apple Standard EULA, linked from the page) |
 | Not found | `404.html` | — |
 
-Links between pages are relative (`privacy.html`), so the site works on any host and in a sub-path. Canonical URLs, `sitemap.xml` and `robots.txt` assume **https://hiddenpace.app** — change them if the site lives elsewhere.
+Links between pages are relative (`privacy.html`), so the site works on any host and in a sub-path. Canonical URLs, `sitemap.xml` and `robots.txt` assume **https://hiddenpace.github.io** — change them if the site lives elsewhere.
 
 `_headers` (security headers, image caching) is used by Cloudflare Pages / Netlify; `.nojekyll` keeps GitHub Pages from running Jekyll. Images: `icon.png` from `Tools/app-icon/preview.png`, `images/*.jpg` from `appstore/en/screenshots/` (600 px, `sips`), `images/ridges.svg` — the game's ridge layers.
 
@@ -25,9 +25,9 @@ Links between pages are relative (`privacy.html`), so the site works on any host
 1. Open `/privacy` and `/support` in a browser — App Review checks both.
 2. Put the URLs into `Tools/asc/listing.py` → `APP`:
    ```python
-   "marketing_url": "https://hiddenpace.app",
-   "support_url": "https://hiddenpace.app/support",
-   "privacy_url": "https://hiddenpace.app/privacy",
+   "marketing_url": "https://hiddenpace.github.io",
+   "support_url": "https://hiddenpace.github.io/support",
+   "privacy_url": "https://hiddenpace.github.io/privacy",
    ```
 3. `Tools/asc/deploy_metadata.py` (dry run) → `Tools/asc/deploy_metadata.py --apply`. The URL fields go to all 15 locales and the "Privacy Policy / Support" lines return to the descriptions.
 
